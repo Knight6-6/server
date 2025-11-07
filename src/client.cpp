@@ -1,12 +1,11 @@
 #include "client.hpp"
 #include <arpa/inet.h>
 
-
-client::client(sockaddr_in* sockaddr)
+client::client(sockaddr_in& sockaddr)
 {
-    char ip_buf[INET_ADDRSTRLEN];
-   port=ntohs(sockaddr->sin_port);
-   inet_ntop(AF_INET , &(sockaddr->sin_addr) , ip_buf , sizeof(ip_buf));
+   char ip_buf[INET_ADDRSTRLEN];
+   port=ntohs(sockaddr.sin_port);
+   inet_ntop(AF_INET , &(sockaddr.sin_addr) , ip_buf , sizeof(ip_buf));
    ip=ip_buf;
    client_time =time(nullptr);
 }

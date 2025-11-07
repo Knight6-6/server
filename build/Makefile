@@ -177,6 +177,78 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/message.o: src/message.cpp.o
+.PHONY : src/message.o
+
+# target to build an object file
+src/message.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/message.cpp.o
+.PHONY : src/message.cpp.o
+
+src/message.i: src/message.cpp.i
+.PHONY : src/message.i
+
+# target to preprocess a source file
+src/message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/message.cpp.i
+.PHONY : src/message.cpp.i
+
+src/message.s: src/message.cpp.s
+.PHONY : src/message.s
+
+# target to generate assembly for a file
+src/message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/message.cpp.s
+.PHONY : src/message.cpp.s
+
+src/recvserver.o: src/recvserver.cpp.o
+.PHONY : src/recvserver.o
+
+# target to build an object file
+src/recvserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/recvserver.cpp.o
+.PHONY : src/recvserver.cpp.o
+
+src/recvserver.i: src/recvserver.cpp.i
+.PHONY : src/recvserver.i
+
+# target to preprocess a source file
+src/recvserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/recvserver.cpp.i
+.PHONY : src/recvserver.cpp.i
+
+src/recvserver.s: src/recvserver.cpp.s
+.PHONY : src/recvserver.s
+
+# target to generate assembly for a file
+src/recvserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/recvserver.cpp.s
+.PHONY : src/recvserver.cpp.s
+
+src/ringbuf.o: src/ringbuf.cpp.o
+.PHONY : src/ringbuf.o
+
+# target to build an object file
+src/ringbuf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ringbuf.cpp.o
+.PHONY : src/ringbuf.cpp.o
+
+src/ringbuf.i: src/ringbuf.cpp.i
+.PHONY : src/ringbuf.i
+
+# target to preprocess a source file
+src/ringbuf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ringbuf.cpp.i
+.PHONY : src/ringbuf.cpp.i
+
+src/ringbuf.s: src/ringbuf.cpp.s
+.PHONY : src/ringbuf.s
+
+# target to generate assembly for a file
+src/ringbuf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ringbuf.cpp.s
+.PHONY : src/ringbuf.cpp.s
+
 src/server.o: src/server.cpp.o
 .PHONY : src/server.o
 
@@ -216,6 +288,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/message.o"
+	@echo "... src/message.i"
+	@echo "... src/message.s"
+	@echo "... src/recvserver.o"
+	@echo "... src/recvserver.i"
+	@echo "... src/recvserver.s"
+	@echo "... src/ringbuf.o"
+	@echo "... src/ringbuf.i"
+	@echo "... src/ringbuf.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"

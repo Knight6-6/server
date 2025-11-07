@@ -6,7 +6,7 @@
 class client
 {
 public:
-       client(sockaddr_in * sockaddr);
+       client(sockaddr_in &sockaddr);
        ~client();
        std::string get_ip();
        unsigned short get_port();

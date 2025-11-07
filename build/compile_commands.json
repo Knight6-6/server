@@ -1,20 +1,38 @@
 [
 {
   "directory": "/home/knight/server/build",
-  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++11 -o CMakeFiles/server.dir/src/client.cpp.o -c /home/knight/server/src/client.cpp",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/client.cpp.o -c /home/knight/server/src/client.cpp",
   "file": "/home/knight/server/src/client.cpp",
   "output": "CMakeFiles/server.dir/src/client.cpp.o"
 },
 {
   "directory": "/home/knight/server/build",
-  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++11 -o CMakeFiles/server.dir/src/main.cpp.o -c /home/knight/server/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/main.cpp.o -c /home/knight/server/src/main.cpp",
   "file": "/home/knight/server/src/main.cpp",
   "output": "CMakeFiles/server.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/knight/server/build",
-  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++11 -o CMakeFiles/server.dir/src/server.cpp.o -c /home/knight/server/src/server.cpp",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/server.cpp.o -c /home/knight/server/src/server.cpp",
   "file": "/home/knight/server/src/server.cpp",
   "output": "CMakeFiles/server.dir/src/server.cpp.o"
+},
+{
+  "directory": "/home/knight/server/build",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/message.cpp.o -c /home/knight/server/src/message.cpp",
+  "file": "/home/knight/server/src/message.cpp",
+  "output": "CMakeFiles/server.dir/src/message.cpp.o"
+},
+{
+  "directory": "/home/knight/server/build",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/recvserver.cpp.o -c /home/knight/server/src/recvserver.cpp",
+  "file": "/home/knight/server/src/recvserver.cpp",
+  "output": "CMakeFiles/server.dir/src/recvserver.cpp.o"
+},
+{
+  "directory": "/home/knight/server/build",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/ringbuf.cpp.o -c /home/knight/server/src/ringbuf.cpp",
+  "file": "/home/knight/server/src/ringbuf.cpp",
+  "output": "CMakeFiles/server.dir/src/ringbuf.cpp.o"
 }
 ]

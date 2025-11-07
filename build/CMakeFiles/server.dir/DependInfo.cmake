@@ -10,6 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/knight/server/src/client.cpp" "CMakeFiles/server.dir/src/client.cpp.o" "gcc" "CMakeFiles/server.dir/src/client.cpp.o.d"
   "/home/knight/server/src/main.cpp" "CMakeFiles/server.dir/src/main.cpp.o" "gcc" "CMakeFiles/server.dir/src/main.cpp.o.d"
+  "/home/knight/server/src/message.cpp" "CMakeFiles/server.dir/src/message.cpp.o" "gcc" "CMakeFiles/server.dir/src/message.cpp.o.d"
+  "/home/knight/server/src/recvserver.cpp" "CMakeFiles/server.dir/src/recvserver.cpp.o" "gcc" "CMakeFiles/server.dir/src/recvserver.cpp.o.d"
+  "/home/knight/server/src/ringbuf.cpp" "CMakeFiles/server.dir/src/ringbuf.cpp.o" "gcc" "CMakeFiles/server.dir/src/ringbuf.cpp.o.d"
   "/home/knight/server/src/server.cpp" "CMakeFiles/server.dir/src/server.cpp.o" "gcc" "CMakeFiles/server.dir/src/server.cpp.o.d"
   )
 

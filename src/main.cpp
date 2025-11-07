@@ -10,10 +10,7 @@ int main()
     }
     else 
     {
-        if(!Server.start())
-        {
-            perror("server start error");
-        }
+        Server.start();
     }
     return 0;
 }

@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 project(server)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 23)
 
-set(sources src/client.cpp src/main.cpp src/server.cpp)
+set(sources src/client.cpp src/main.cpp src/server.cpp src/message.cpp src/recvserver.cpp src/ringbuf.cpp)
 
 add_executable(server ${sources})
 

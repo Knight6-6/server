@@ -111,11 +111,56 @@ CMakeFiles/server.dir/src/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/knight/server/src/server.cpp -o CMakeFiles/server.dir/src/server.cpp.s
 
+CMakeFiles/server.dir/src/message.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/message.cpp.o: /home/knight/server/src/message.cpp
+CMakeFiles/server.dir/src/message.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/knight/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/message.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/message.cpp.o -MF CMakeFiles/server.dir/src/message.cpp.o.d -o CMakeFiles/server.dir/src/message.cpp.o -c /home/knight/server/src/message.cpp
+
+CMakeFiles/server.dir/src/message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/message.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/knight/server/src/message.cpp > CMakeFiles/server.dir/src/message.cpp.i
+
+CMakeFiles/server.dir/src/message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/message.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/knight/server/src/message.cpp -o CMakeFiles/server.dir/src/message.cpp.s
+
+CMakeFiles/server.dir/src/recvserver.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/recvserver.cpp.o: /home/knight/server/src/recvserver.cpp
+CMakeFiles/server.dir/src/recvserver.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/knight/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/src/recvserver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/recvserver.cpp.o -MF CMakeFiles/server.dir/src/recvserver.cpp.o.d -o CMakeFiles/server.dir/src/recvserver.cpp.o -c /home/knight/server/src/recvserver.cpp
+
+CMakeFiles/server.dir/src/recvserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/recvserver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/knight/server/src/recvserver.cpp > CMakeFiles/server.dir/src/recvserver.cpp.i
+
+CMakeFiles/server.dir/src/recvserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/recvserver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/knight/server/src/recvserver.cpp -o CMakeFiles/server.dir/src/recvserver.cpp.s
+
+CMakeFiles/server.dir/src/ringbuf.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/ringbuf.cpp.o: /home/knight/server/src/ringbuf.cpp
+CMakeFiles/server.dir/src/ringbuf.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/knight/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/src/ringbuf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/ringbuf.cpp.o -MF CMakeFiles/server.dir/src/ringbuf.cpp.o.d -o CMakeFiles/server.dir/src/ringbuf.cpp.o -c /home/knight/server/src/ringbuf.cpp
+
+CMakeFiles/server.dir/src/ringbuf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/ringbuf.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/knight/server/src/ringbuf.cpp > CMakeFiles/server.dir/src/ringbuf.cpp.i
+
+CMakeFiles/server.dir/src/ringbuf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/ringbuf.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/knight/server/src/ringbuf.cpp -o CMakeFiles/server.dir/src/ringbuf.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/src/client.cpp.o" \
 "CMakeFiles/server.dir/src/main.cpp.o" \
-"CMakeFiles/server.dir/src/server.cpp.o"
+"CMakeFiles/server.dir/src/server.cpp.o" \
+"CMakeFiles/server.dir/src/message.cpp.o" \
+"CMakeFiles/server.dir/src/recvserver.cpp.o" \
+"CMakeFiles/server.dir/src/ringbuf.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ server_EXTERNAL_OBJECTS =
 server: CMakeFiles/server.dir/src/client.cpp.o
 server: CMakeFiles/server.dir/src/main.cpp.o
 server: CMakeFiles/server.dir/src/server.cpp.o
+server: CMakeFiles/server.dir/src/message.cpp.o
+server: CMakeFiles/server.dir/src/recvserver.cpp.o
+server: CMakeFiles/server.dir/src/ringbuf.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/knight/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/knight/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
