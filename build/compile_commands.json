@@ -34,5 +34,17 @@
   "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/ringbuf.cpp.o -c /home/knight/server/src/ringbuf.cpp",
   "file": "/home/knight/server/src/ringbuf.cpp",
   "output": "CMakeFiles/server.dir/src/ringbuf.cpp.o"
+},
+{
+  "directory": "/home/knight/server/build",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/threadpoll.cpp.o -c /home/knight/server/src/threadpoll.cpp",
+  "file": "/home/knight/server/src/threadpoll.cpp",
+  "output": "CMakeFiles/server.dir/src/threadpoll.cpp.o"
+},
+{
+  "directory": "/home/knight/server/build",
+  "command": "/usr/bin/c++  -I/home/knight/server/include -g -std=gnu++23 -o CMakeFiles/server.dir/src/usermanager.cpp.o -c /home/knight/server/src/usermanager.cpp",
+  "file": "/home/knight/server/src/usermanager.cpp",
+  "output": "CMakeFiles/server.dir/src/usermanager.cpp.o"
 }
 ]

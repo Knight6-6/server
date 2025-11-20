@@ -2,10 +2,13 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
-#include "recvserver.hpp"
+#include <sys/epoll.h>
+#include <thread>
 
 
-server::server():listensocket(-1){}
+constexpr unsigned IO=20; 
+
+server::server():listensocket(-1),globalpoll(20){}
 
 server::~server(){}
 
@@ -37,11 +40,41 @@ bool server::init(const char* ip , unsigned short port)
 }
 bool server::start()
 {
-    recvserver recv_server;
-    if(!recv_server.init(listensocket))
+    for(int i=0 ; i<IO ; i++)
     {
-        return false;
-        perror("reveserver init error ");
+        usermanager_.emplace_back(std::make_unique<usermanager>(&globalpoll));
     }
-    return recv_server.start();
+    for(int i=0 ; i<IO ; i++)
+    {
+        IOthread.emplace_back(std::make_unique<recvserver>(usermanager_[i].get()));
+    }    
+    for(int i=0 ; i<IO ; i++)
+    {
+        std::thread([this,i]()
+       {
+           if(!IOthread[i]->init())
+           {
+              return;
+           }
+          IOthread[i]->start();
+       }).detach();
+    }
+    int nextIO=0;
+    while(true)
+    {
+        struct sockaddr_in clientbuf;
+        socklen_t length=sizeof(clientbuf);
+        int acceptfd=accept(listensocket ,(sockaddr*)&clientbuf , &length);
+        if(acceptfd<0)
+        { 
+            perror("accept error");
+            return false;  
+        }
+        int s= nextIO++ % IO;
+        struct epoll_event ev;
+        ev.events = EPOLLIN | EPOLLERR| EPOLLOUT |EPOLLRDHUP ;
+        ev.data.fd =acceptfd;
+        epoll_ctl(IOthread[s]->EPOLL(),EPOLL_CTL_ADD , acceptfd , &ev);
+        IOthread[s]->add_clientInfo(acceptfd,clientbuf);
+    }
 }

@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/src/ringbuf.cpp.o.d"
   "CMakeFiles/server.dir/src/server.cpp.o"
   "CMakeFiles/server.dir/src/server.cpp.o.d"
+  "CMakeFiles/server.dir/src/threadpoll.cpp.o"
+  "CMakeFiles/server.dir/src/threadpoll.cpp.o.d"
+  "CMakeFiles/server.dir/src/usermanager.cpp.o"
+  "CMakeFiles/server.dir/src/usermanager.cpp.o.d"
   "server"
   "server.pdb"
 )

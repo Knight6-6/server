@@ -14,6 +14,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/knight/server/src/recvserver.cpp" "CMakeFiles/server.dir/src/recvserver.cpp.o" "gcc" "CMakeFiles/server.dir/src/recvserver.cpp.o.d"
   "/home/knight/server/src/ringbuf.cpp" "CMakeFiles/server.dir/src/ringbuf.cpp.o" "gcc" "CMakeFiles/server.dir/src/ringbuf.cpp.o.d"
   "/home/knight/server/src/server.cpp" "CMakeFiles/server.dir/src/server.cpp.o" "gcc" "CMakeFiles/server.dir/src/server.cpp.o.d"
+  "/home/knight/server/src/threadpoll.cpp" "CMakeFiles/server.dir/src/threadpoll.cpp.o" "gcc" "CMakeFiles/server.dir/src/threadpoll.cpp.o.d"
+  "/home/knight/server/src/usermanager.cpp" "CMakeFiles/server.dir/src/usermanager.cpp.o" "gcc" "CMakeFiles/server.dir/src/usermanager.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

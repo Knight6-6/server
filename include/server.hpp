@@ -1,5 +1,10 @@
 #pragma once
 #include <cstring>
+#include <vector>
+#include "threadpoll.hpp"
+#include "usermanager.hpp"
+#include "recvserver.hpp"
+
 
 class server
 {
@@ -10,4 +15,7 @@ public:
         bool start();
 private:
         int listensocket;
+        threadpoll globalpoll;
+        std::vector<std::unique_ptr<usermanager>> usermanager_;
+        std::vector<std::unique_ptr<recvserver>> IOthread;
 };

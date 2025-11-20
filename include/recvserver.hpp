@@ -5,17 +5,20 @@
 #include <string>
 #include "client.hpp"
 #include "ringbuf.hpp"
+#include "usermanager.hpp"
 
 class recvserver
 {
 public:
+        recvserver(usermanager*user_);
         ~recvserver();
-        bool init(int socket_);
+        bool init();
         bool start();
+        int EPOLL();
+        bool add_clientInfo(int fd ,sockaddr_in &sockaddr);
 private:
-        int socket;
         int epoll_fd;
-        std::unordered_set <std::string> user;
+        usermanager* user;
         std::unordered_map <int ,ringbuf> recv_buf;
         std::unordered_map <int ,ringbuf> send_buf;
         std::unordered_map <int ,std::unique_ptr<client>> clientInfo;

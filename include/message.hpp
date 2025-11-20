@@ -3,13 +3,13 @@
 
 enum class CMD
 {
-    CREATE,
-    LOGIN,
-    LOGOUT,
-    LOGIN_RESULT,
-    LOGOUT_RESULT,
-    CREATE_RESULT,
-    NO_CMD,
+    CREATE =1,
+    LOGIN  =2,
+    LOGOUT =3,
+    LOGIN_RESULT   =4,
+    LOGOUT_RESULT  =5,
+    CREATE_RESULT  =6,
+    NO_CMD  =7,
 };
 
 
@@ -21,8 +21,8 @@ private:
 public:
        HeadMessage();
        HeadMessage(CMD _cmd , unsigned _length);
-       unsigned length_();
-       CMD cmd_();
+       unsigned getlength();
+       CMD getcmd();
 };
 
 

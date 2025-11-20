@@ -273,6 +273,54 @@ src/server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
 
+src/threadpoll.o: src/threadpoll.cpp.o
+.PHONY : src/threadpoll.o
+
+# target to build an object file
+src/threadpoll.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/threadpoll.cpp.o
+.PHONY : src/threadpoll.cpp.o
+
+src/threadpoll.i: src/threadpoll.cpp.i
+.PHONY : src/threadpoll.i
+
+# target to preprocess a source file
+src/threadpoll.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/threadpoll.cpp.i
+.PHONY : src/threadpoll.cpp.i
+
+src/threadpoll.s: src/threadpoll.cpp.s
+.PHONY : src/threadpoll.s
+
+# target to generate assembly for a file
+src/threadpoll.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/threadpoll.cpp.s
+.PHONY : src/threadpoll.cpp.s
+
+src/usermanager.o: src/usermanager.cpp.o
+.PHONY : src/usermanager.o
+
+# target to build an object file
+src/usermanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/usermanager.cpp.o
+.PHONY : src/usermanager.cpp.o
+
+src/usermanager.i: src/usermanager.cpp.i
+.PHONY : src/usermanager.i
+
+# target to preprocess a source file
+src/usermanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/usermanager.cpp.i
+.PHONY : src/usermanager.cpp.i
+
+src/usermanager.s: src/usermanager.cpp.s
+.PHONY : src/usermanager.s
+
+# target to generate assembly for a file
+src/usermanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/usermanager.cpp.s
+.PHONY : src/usermanager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,6 +348,12 @@ help:
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
+	@echo "... src/threadpoll.o"
+	@echo "... src/threadpoll.i"
+	@echo "... src/threadpoll.s"
+	@echo "... src/usermanager.o"
+	@echo "... src/usermanager.i"
+	@echo "... src/usermanager.s"
 .PHONY : help
 
 

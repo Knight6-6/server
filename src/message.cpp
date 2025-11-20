@@ -2,14 +2,15 @@
 
 HeadMessage::HeadMessage() : cmd(CMD::NO_CMD), length(0) {}
 HeadMessage::HeadMessage(CMD _cmd , unsigned _length) : cmd(_cmd) , length(_length){}
-unsigned HeadMessage::length_()
+unsigned HeadMessage::getlength()
 {
     return length;
 }
-CMD HeadMessage::cmd_()
+CMD HeadMessage::getcmd()
 {
     return cmd;
 }
+
 
 CREATE::CREATE(char* _username , char* _password):HeadMessage(CMD::CREATE , sizeof(CREATE))
 {
