@@ -2,14 +2,16 @@ cmake_minimum_required(VERSION 3.10)
 
 project(server)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 20)
 
-set(sources src/client.cpp src/main.cpp src/server.cpp src/message.cpp src/recvserver.cpp src/ringbuf.cpp src/threadpoll.cpp src/usermanager.cpp)
+add_subdirectory(base)
+add_subdirectory(protocol)
+add_subdirectory(utils)
+add_subdirectory(business)
+add_subdirectory(core)
 
-add_executable(server ${sources})
+add_executable(server main.cpp)
 
-target_include_directories(server PRIVATE include)
+target_include_directories(server PUBLIC core)
 
-
-
-
+target_link_libraries(server PUBLIC core_lib)
